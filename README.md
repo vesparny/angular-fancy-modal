@@ -28,14 +28,14 @@ var app = angular.module('exampleApp', ['vesparny.fancyModal']);
 
 app.controller('MyCtrl', function ($scope, $fancyModal) {
 	$scope.open = function () {
-		$fancyModal.open({ templateUrl: 'popupTmpl.html' });
+		$fancyModal({ templateUrl: 'popupTmpl.html' });
 	};
 });
 ```
 
 ## API
 
-$fancyModal service provides easy to use and minimalistic API, but in the same time it's powerful enough. Here is the list of accessible methods that you can use:
+`$fancyModal` service provides easy to use and minimalistic API, but in the same time it's powerful enough. Here is the list of accessible methods that you can use:
 
 ===
 
@@ -44,6 +44,10 @@ $fancyModal service provides easy to use and minimalistic API, but in the same t
 Method allows to open modal dialog. It accepts `options` object as the only argument.
 
 ### Options:
+
+`$modal` is a service to quickly create AngularJS-powered modal windows. Creating custom modals is straightforward: create a partial view, its controller and reference them when using the service.
+
+The `$modal` service has only one method: open(options) where available options are like follows:
 
 * `templateUrl` - a path to a template representing modal's content
 * `template` - inline template representing the modal's content
@@ -65,7 +69,7 @@ Method allows to open modal dialog. It accepts `options` object as the only argu
 
 ### `.close()`
 
-Calling the `.close` methos on an instance returned by the `.open` method will close the relative modal, calling the method on the `` service will close every opened modal.
+Calling the `.close` method on an instance returned by the `.open` method will close the relative modal, calling the method on the `$fancyModal` service will close every opened modal.
 
 ===
 
@@ -92,13 +96,13 @@ This is the DOM ID of the modal which was just created.
 
 ##### `close {Function}`
 
-This is a function which will close the dialog which was opened by the current call to `open()`.
+This is a function which will close the modal opened before.
 
 ##### `opened {Promise}`
 
-A promise which will resolve when the dialog is fully loaded.
+A promise which will resolve when the modal is fully loaded.
 
-This allows you do to something like this:
+Example:
 
 ```javascript
 var modal = $fancyModal.open({
@@ -110,17 +114,11 @@ modal.opened.then(function() {
 ```
 ===
 
-
-### `.close(id)`
-
-Method accepts dialog's `id` as string argument to close specific dialog window, if `id` is not specified it will close all currently active modals.
-
-===
-
 ## Directive
 
 By default $fancyModal module is served with `fancy-modal` directive which can be used as attribute for buttons, links, etc. All `.open()` options are available through attributes.
-Some imaginary button, for example, will look like:
+
+Example:
 
 ```html
 <button type="button"
@@ -136,7 +134,7 @@ Everytime when $fancyModal is opened or closed we're broadcasting three events (
 
 - `$fancyModal.closed`
 
-This allows you to register your own listeners, example:
+Example:
 
 ```javascript
 $rootScope.$on('$fancyModal.opened', function (e, $modal) {
