@@ -1,6 +1,6 @@
 ### 0.1.2 (2014-11-19)
 
-* dixing dist version
+* fixing dist version
 
 ### 0.1.1 (2014-11-19)
 
