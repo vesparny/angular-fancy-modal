@@ -6,120 +6,19 @@
  * @link https://github.com/vesparny/angular-fancy-modal
  * @license MIT
  */
-.fancymodal.fancymodal-theme-classic {
-  padding-top: 120px;
-  padding-bottom: 160px; }
-  .fancymodal.fancymodal-theme-classic .fancymodal-content {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    padding: 2em 1em;
-    border-radius: 5px;
-    background: #eee;
-    color: #000;
-    position: relative;
-    margin: 0 auto;
-    max-width: 100%;
-    width: 800px; }
-  .fancymodal.fancymodal-theme-classic .fancymodal-close {
-    border-radius: 3px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer; }
-  .fancymodal.fancymodal-theme-classic .fancymodal-close:before {
-    border-radius: 3px;
-    position: absolute;
-    content: "\00D7";
-    font-size: 26px;
-    line-height: 30px;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    top: 3px;
-    right: 3px;
-    color: #ccc; }
-  .fancymodal.fancymodal-theme-classic .fancymodal-close:hover:before,
-  .fancymodal.fancymodal-theme-classic .fancymodal-close:active:before {
-    color: #777;
-    background: #e0e0e0; }
-  .fancymodal.fancymodal-theme-classic .fancymodal-content {
-    width: 420px; }
-  .fancymodal.fancymodal-theme-classic .fancymodal-content-opening {
-    -webkit-animation: fancymodal-in 0.8s;
-    animation: fancymodal-in 0.8s; }
-  .fancymodal.fancymodal-theme-classic .fancymodal-content-closing {
-    -webkit-animation: fancymodal-out 0.5s;
-    animation: fancymodal-out 0.5s; }
-  .fancymodal.fancymodal-theme-classic .fancymodal-overlay-opening {
-    -webkit-animation: fancymodal-fadeIn 0.5s;
-    animation: fancymodal-fadeIn 0.5s; }
-  .fancymodal.fancymodal-theme-classic .fancymodal-overlay-closing {
-    -webkit-animation: fancymodal-fadeOut 0.5s;
-    animation: fancymodal-fadeOut 0.5s; }
-
-@-webkit-keyframes fancymodal-fadeOut {
-  0% {
-    opacity: 1; }
-
-  100% {
-    opacity: 0; } }
-@keyframes fancymodal-fadeOut {
-  0% {
-    opacity: 1; }
-
-  100% {
-    opacity: 0; } }
-@-webkit-keyframes fancymodal-fadeIn {
-  0% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-@keyframes fancymodal-fadeIn {
-  0% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-@-webkit-keyframes fancymodal-in {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-40px);
-    transform: translateY(-40px); }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0); } }
-@keyframes fancymodal-in {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-40px);
-    transform: translateY(-40px); }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0); } }
-@-webkit-keyframes fancymodal-out {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0); }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(-40px);
-    transform: translateY(-40px); } }
-@keyframes fancymodal-out {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0); }
-
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(-40px);
-    transform: translateY(-40px); } }
+.fancymodal.fancymodal-theme-classic .fancymodal-content {
+  max-width: 420px;
+  background-color: #000;
+  color: #fff; }
+.fancymodal.fancymodal-theme-classic .fancymodal-content-opening {
+  -webkit-animation: fancymodal-in 1s;
+  animation: fancymodal-in 1s; }
+.fancymodal.fancymodal-theme-classic .fancymodal-content-closing {
+  -webkit-animation: fancymodal-out 1s;
+  animation: fancymodal-out 1s; }
+.fancymodal.fancymodal-theme-classic .fancymodal-overlay-opening {
+  -webkit-animation: fancymodal-fadeIn 1s;
+  animation: fancymodal-fadeIn 1s; }
+.fancymodal.fancymodal-theme-classic .fancymodal-overlay-closing {
+  -webkit-animation: fancymodal-fadeOut 1s;
+  animation: fancymodal-fadeOut 1s; }

@@ -20,7 +20,7 @@
       closeOnEscape: true,
       closeOnOverlayClick: true,
       overlay: true,
-      theme: 'fancymodal-theme-classic',
+      themeClass: '',
       openingClass: 'fancymodal-content-opening',
       closingClass: 'fancymodal-content-closing',
       openingOverlayClass: 'fancymodal-overlay-opening',
@@ -100,7 +100,7 @@
             $body.removeClass('fancymodal-open');
             $html.css('margin-right', '');
           }
-          $rootScope.$emit('fancymodal.closed', elementId.substring(elementId.indexOf('-') + 1));
+          $rootScope.$emit('$fancyModal.closed', elementId);
         }
 
         function closeModal(modal) {
@@ -177,7 +177,7 @@
                     ctrl = $controller(options.controller, data);
                   }
                   contentData.append($compile(htmlTemplate)(scope));
-                  $rootScope.$emit('fancymodal.opened', modal);
+                  $rootScope.$emit('$fancyModal.opened', modal);
                   defer.resolve();
                 } else {
                   defer.reject();
@@ -199,7 +199,7 @@
             }
 
             var scope = (options.scope || $rootScope).$new();
-            var modal = angular.element('<div id="fancymodal-' + incrementalId + '" class="fancymodal"></div>').addClass(options.theme);
+            var modal = angular.element('<div id="fancymodal-' + incrementalId + '" class="fancymodal"></div>').addClass(options.themeClass);
             modal.data('options', options);
             var content = angular.element('<div>').addClass('fancymodal-content');
 

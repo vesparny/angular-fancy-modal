@@ -7,8 +7,7 @@
 
   function config($fancyModalProvider) {
     $fancyModalProvider.setDefaults({
-      template: '<div>I\'m a basic template</div>',
-      theme: 'fancymodal-theme-classic'
+      template: '<div>I\'m a basic template</div>'
     });
   }
 
@@ -42,16 +41,16 @@
     crtl.close = $scope.$modal.close;
   }
 
-
   function AppCtrl($rootScope, $scope, $http, $q, $timeout, $fancyModal) {
     $scope.data = {};
     $scope.data.defaultMessage = 'hello fancy modal!';
 
-    $rootScope.$on('fancymodal.opened', function(event, modal) {
-      console.log('a modal has been opened', modal);
+    $rootScope.$on('$fancyModal.opened', function (e, $modal) {
+      console.log('$fancyModal opened: ' + $modal.attr('id'));
     });
-    $rootScope.$on('fancymodal.closed', function(event, modalId) {
-      console.log('a modal has been closed', 'id: ' + modalId);
+
+    $rootScope.$on('$fancyModal.closed', function (e, id) {
+      console.log('$fancyModal closed: ' + id);
     });
 
     var app = this;
@@ -77,10 +76,17 @@
       $fancyModal.open();
     };
 
+    app.openThemed = function() {
+      $fancyModal.open({
+        themeClass: 'fancymodal-theme-classic'
+      });
+    };
+
+
     app.openWithAnimateCss = function() {
       $fancyModal.open({
         template: '<div>{{data.defaultMessage}}</div>',
-        scope:$scope,
+        scope: $scope,
         openingClass: 'animated rollIn',
         closingClass: 'animated rollOut',
         openingOverlayClass: 'animated fadeIn',
