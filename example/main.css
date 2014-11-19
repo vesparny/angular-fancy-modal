@@ -1,0 +1,181 @@
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class*="pure-u"] {
+  font-family: 'Open Sans', sans-serif
+}
+body {
+  position: relative;
+  background-color: #dddddd;
+}
+header .pure-menu.pure-menu-horizontal {
+  background-color: #ff851b;
+}
+html {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+hr3 {
+  background: #eee;
+  padding: 4px;
+  border-radius: 3px;
+}
+.example a {
+  display: inline-block;
+  padding: 10px;
+}
+footer {
+  background-color: #fff;
+}
+.page {
+  text-align: center;
+}
+a:active {
+  outline: none;
+  -moz-outline-style: none;
+}
+a:focus {
+  outline: none;
+  -moz-outline-style: none;
+}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none
+}
+::-webkit-input-placeholder {
+  color: #999
+}
+::-moz-placeholder {
+  color: #999
+}
+:-ms-input-placeholder {
+  color: #999
+}
+img.pure-img {
+  vertical-align: middle;
+  max-width: 60%;
+  display: inline
+}
+code {
+  color: #ff4136
+}
+h3 {
+  font-weight: 400;
+  font-size: 22px;
+  font-size: 1.375rem
+}
+a {
+  color: #0074d9;
+  text-decoration: none;
+  line-height: inherit
+}
+a:focus,
+a:hover {
+  color: #005bab
+}
+a.pure-button:focus,
+a.pure-button:hover {
+  color: #fff
+}
+pre code {
+  color: #111;
+  background-color: #ddd;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #aaa;
+  display: block;
+  padding: .5em
+}
+h4 {
+  font-size: 21px;
+  font-size: 1.3125rem
+}
+.text-center,
+.hlist {
+  text-align: center
+}
+.island {
+  padding: 1em
+}
+.island3 {
+  padding: 3em
+}
+.island-panel {
+  background-color: #ddd;
+  padding: 2em;
+  font-size: 20px;
+  font-size: 1.25rem
+}
+.hlist {
+  text-align: center list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+}
+.hlist>li {
+  display: inline-block;
+  margin-left: 1em
+}
+.hlist>li a.tweet {
+  position: relative;
+  top: -3px
+}
+.button-xsmall {
+  font-size: 70%
+}
+.button-small {
+  font-size: 85%
+}
+.button-large {
+  font-size: 110%
+}
+.button-xlarge {
+  font-size: 125%
+}
+.button-expanded {
+  width: 100%;
+  padding: 1rem 0;
+  margin: 3px
+}
+.l-page .pure-g > div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+.center {
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button-success {
+  background: rgb(28, 184, 65);
+  /* this is a green */
+}
+.button-error {
+  background: rgb(202, 60, 60);
+  /* this is a maroon */
+}
+.button-warning {
+  background: rgb(223, 117, 20);
+  /* this is an orange */
+}
+.button-secondary {
+  background: rgb(66, 184, 221);
+  /* this is a light blue */
+}

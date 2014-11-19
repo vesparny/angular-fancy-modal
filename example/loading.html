@@ -1,0 +1,10 @@
+<div>
+  <div class="island">
+    <div ng-show="!data">loading...</div>
+    {{data}}
+  </div>
+
+  <div class="text-center">
+    <button class="pure-button pure-button-primary" ng-if="data" ng-click="modalData.close()">close</button>
+  </div>
+</div>

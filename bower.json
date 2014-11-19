@@ -1,0 +1,43 @@
+{
+  "name": "angular-fancy-modal",
+  "authors": [
+    "Alessandro Arnodo <alessandro@arnodo.net> (http://alessandro.arnodo.net)"
+  ],
+  "version": "0.1.0",
+  "homepage": "https://github.com/vesparny/angular-fancy-modal",
+  "description": "the definitive modal/popup/dialog solution for AngularJS.",
+  "main": [
+    "dist/angular-fancy-modal.js",
+    "dist/angular-fancy-modal.css",
+    "dist/angular-fancy-modal-theme-default.css"
+  ],
+  "keywords": [
+    "angularjs",
+    "modal",
+    "popup",
+    "dialog",
+    "ng",
+    "provider",
+    "factory",
+    "directive",
+    "service"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "example",
+    "gulpfile.js",
+    "*.config.js",
+    "index.html"
+  ],
+  "dependencies": {
+    "angular": ">= 1.2.0"
+  },
+  "devDependencies": {
+    "angular-mocks": ">= 1.2.0",
+    "jquery": "~2.1.1"
+  }
+}
