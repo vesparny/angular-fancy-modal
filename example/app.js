@@ -173,6 +173,7 @@
           }
         }
       });
+      console.log(modal);
       modal.opened.then(function() {
         modal.close();
       });

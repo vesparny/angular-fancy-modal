@@ -28,7 +28,7 @@ var app = angular.module('exampleApp', ['vesparny.fancyModal']);
 
 app.controller('MyCtrl', function ($scope, $fancyModal) {
 	$scope.open = function () {
-		$fancyModal({ templateUrl: 'popupTmpl.html' });
+		$fancyModal.open({ templateUrl: 'popupTmpl.html' });
 	};
 });
 ```
@@ -44,10 +44,6 @@ $fancyModal service provides easy to use and minimalistic API, but in the same t
 Method allows to open modal dialog. It accepts `options` object as the only argument.
 
 ### Options:
-
-`$modal` is a service to quickly create AngularJS-powered modal windows. Creating custom modals is straightforward: create a partial view, its controller and reference them when using the service.
-
-The `$modal` service has only one method: open(options) where available options are like follows:
 
 * `templateUrl` - a path to a template representing modal's content
 * `template` - inline template representing the modal's content

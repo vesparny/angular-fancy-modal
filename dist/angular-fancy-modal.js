@@ -225,11 +225,11 @@
             modal.bind('click', closeByAction);
             modal.append(content);
             $body.append(modal);
-
+            var id = 'fancymodal-'+incrementalId;
             var $modal = {
-              id: incrementalId,
+              id: id,
               close: function() {
-                return close(incrementalId);
+                return close(id);
               }
             };
             // open the dialog
