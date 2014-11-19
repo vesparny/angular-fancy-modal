@@ -3,7 +3,7 @@
   "authors": [
     "Alessandro Arnodo <alessandro@arnodo.net> (http://alessandro.arnodo.net)"
   ],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/vesparny/angular-fancy-modal",
   "description": "the definitive modal/popup/dialog solution for AngularJS.",
   "main": [
@@ -28,6 +28,7 @@
     "node_modules",
     "bower_components",
     "test",
+    "lib",
     "example",
     "gulpfile.js",
     "*.config.js",
