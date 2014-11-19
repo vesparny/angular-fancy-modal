@@ -2,6 +2,7 @@
 
 **The definitive modal/popup/dialog solution for AngularJS.**
 Modal dialogs and popups for [Angular.js](http://angularjs.org/) (>=1.2.x) applications.
+Mobile friendly out of the box.
 
 [![Build Status](https://secure.travis-ci.org/vesparny/angular-fancy-modal.svg)](http://travis-ci.org/vesparny/angular-fancy-modal)
 
