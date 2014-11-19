@@ -23,8 +23,8 @@
       theme: 'fancymodal-theme-classic',
       openingClass: 'fancymodal-content-opening',
       closingClass: 'fancymodal-content-closing',
-      openingOverlayClass: '',
-      closingOverlayClass: '',
+      openingOverlayClass: 'fancymodal-overlay-opening',
+      closingOverlayClass: 'fancymodal-overlay-closing',
       bodyClass: 'fancymodal-open'
     };
 
