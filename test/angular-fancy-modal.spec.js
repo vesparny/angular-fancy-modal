@@ -35,7 +35,7 @@
           templateUrl: 'test.html'
         });
         $rootScope.$digest();
-        expect(angular.element(document.body).find('#fancymodal-' + modal.id + ' .fancymodal-data').text()).toBe('hello');
+        expect(angular.element(document.body).find('#' + modal.id + ' .fancymodal-data').text()).toBe('hello');
       });
 
       it('should create the modal with the right scope value within the inline controller', function() {
@@ -43,7 +43,7 @@
           template: '<div>{{hello}}</div>'
         });
         $rootScope.$digest();
-        expect(angular.element(document.body).find('#fancymodal-' + modal.id + ' .fancymodal-data').text()).toBe('hello');
+        expect(angular.element(document.body).find('#' + modal.id + ' .fancymodal-data').text()).toBe('hello');
       });
     });
 
