@@ -25,7 +25,7 @@ gulp.task('sass', function() {
     .pipe($.header(config.banner, {
       pkg: pkg
     }))
-    .pipe($.rubySass())
+    .pipe($.sass())
     .on('error', function(err) {
       console.log(err.message);
     })

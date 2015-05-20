@@ -2,7 +2,7 @@
  * angular-fancy-modal - the definitive modal/popup/dialog solution for AngularJS.
  * @author Alessandro Arnodo
  * @url http://alessandro.arnodo.net
- * @version v0.1.2
+ * @version v0.1.4
  * @link https://github.com/vesparny/angular-fancy-modal
  * @license MIT
  */
@@ -10,15 +10,19 @@
   max-width: 420px;
   background-color: #000;
   color: #fff; }
+
 .fancymodal.fancymodal-theme-classic .fancymodal-content-opening {
   -webkit-animation: fancymodal-in 1s;
   animation: fancymodal-in 1s; }
+
 .fancymodal.fancymodal-theme-classic .fancymodal-content-closing {
   -webkit-animation: fancymodal-out 1s;
   animation: fancymodal-out 1s; }
+
 .fancymodal.fancymodal-theme-classic .fancymodal-overlay-opening {
   -webkit-animation: fancymodal-fadeIn 1s;
   animation: fancymodal-fadeIn 1s; }
+
 .fancymodal.fancymodal-theme-classic .fancymodal-overlay-closing {
   -webkit-animation: fancymodal-fadeOut 1s;
   animation: fancymodal-fadeOut 1s; }

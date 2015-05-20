@@ -2,7 +2,7 @@
  * angular-fancy-modal - the definitive modal/popup/dialog solution for AngularJS.
  * @author Alessandro Arnodo
  * @url http://alessandro.arnodo.net
- * @version v0.1.2
+ * @version v0.1.4
  * @link https://github.com/vesparny/angular-fancy-modal
  * @license MIT
  */
