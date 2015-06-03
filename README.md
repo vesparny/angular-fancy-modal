@@ -29,7 +29,7 @@ var app = angular.module('exampleApp', ['vesparny.fancyModal']);
 
 app.controller('MyCtrl', function ($scope, $fancyModal) {
 	$scope.open = function () {
-		$fancyModal({ templateUrl: 'popupTmpl.html' });
+		$fancyModal.open({ templateUrl: 'popupTmpl.html' });
 	};
 });
 ```
