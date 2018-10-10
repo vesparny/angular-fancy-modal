@@ -1,3 +1,6 @@
+# STATUS: UNMAINTAINED
+---
+
 # [angular-fancy-modal](http://vesparny.github.io/angular-fancy-modal)
 
 **The definitive modal/popup/dialog solution for AngularJS.**
